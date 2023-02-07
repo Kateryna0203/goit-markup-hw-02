@@ -50,8 +50,6 @@ body {
 }
 
 .logo-second {
-  text-transform: uppercase;
-
   color: var(--dark);
 }
 .address {
@@ -73,10 +71,6 @@ body {
   color: var(--pressed-state);
 }
 
-.phone-number {
-  letter-spacing: 0.02em;
-  color: var(--text);
-}
 /* Основний контент */
 /* секція 1 */
 .hero {
@@ -122,7 +116,6 @@ body {
 
 .description-text {
   letter-spacing: 0.02em;
-  color: var(--text);
 }
 /* секція 3 */
 .section-title {
@@ -144,7 +137,6 @@ body {
 .list-workers {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
@@ -152,7 +144,6 @@ body {
 .profession {
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--text);
 }
 /* футер */
 .logo-second-footer {
@@ -167,7 +158,10 @@ body {
 }
 /* Портфоліо */
 /* секція 1 */
-.filters-button-active {
+.portfolio-item {
+  list-style-type: none;
+}
+.portfolio-button-active {
   width: 69px;
   height: 48px;
   background: var(--pressed-state);
@@ -181,10 +175,11 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.filters-item {
-  list-style-type: none;
+.portfolio-button-active:hover,
+.portfolio-button-active:focus {
+  background: var(--primary-brand);
 }
-.filters-button {
+.Portfolio-button {
   width: 116px;
   height: 48px;
   background: var(--light);
@@ -196,36 +191,21 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-.filters-button:hover,
-.filters-button:focus {
+.Portfolio-button:hover,
+.Portfolio-button:focus {
   background: var(--pressed-state);
   color: var(--background-color);
 }
-.filters-button-active:hover,
-.filters-button-active:focus {
-  background: var(--primary-brand);
-}
-/* Vector */
-.vector {
-  left: 8.33%;
-  right: 8.33%;
-  top: 0%;
-  bottom: 0%;
-}
 
-/* секція 2 */
-
-.portfolio-item {
+.portfolio-list {
   list-style-type: none;
 }
 .portfolio-text {
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
 .portfolio-filters {
-  font-weight: 400;
   letter-spacing: 0.02em;
-  color: var(--text);
-  flex: none;
 }
